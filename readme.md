@@ -2,7 +2,7 @@
 Written in PHP5, MySQL, Laravel 5.1.
 Athanasios Emmanouilidis 2015, MIT LICENSE.
 
-![ScreenShot](http://s9.postimg.org/enq5sg371/save_Url_Screenshot.png)
+![ScreenShot](http://s9.postimg.org/g2rqh64a3/save_Url_Screenshot.jpg)
 
 Install instructions:
 
