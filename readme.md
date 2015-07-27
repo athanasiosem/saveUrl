@@ -1,6 +1,6 @@
 ## saveUrl web app
-Written in PHP5, Laravel 5.1.
-Athanasios Emmanouilidis 2015, MIT LICENSE
+Written in PHP5, MySQL, Laravel 5.1.
+Athanasios Emmanouilidis 2015, MIT LICENSE.
 
 Install instructions:
 
