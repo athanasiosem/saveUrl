@@ -26,16 +26,19 @@ $('body').on('click', '.deleteButton', function() {
 
 $id = $(this).parent().parent().find('td:first-child').text();
 
+if(confirm("Are you sure you want to delete this?")){
+
    // ajax call to the API
    $.ajax({
        url: 'deleteLink',
        type: 'DELETE',
        data : {id:$id, _token:$csrf_token},
        success: function(result) {
-           alert("post deleted from db!");
+         alert("post deleted from db!");
            table.draw();
        }
    });
+}
 
  });
 
