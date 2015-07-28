@@ -14,7 +14,7 @@ Prerequisites:
     iii) For unix preferably MAMP
 3. MySQL
 
-Install instructions for Windows:
+Instructions for Windows:
 ---------------------------------
 1. Install XAMPP.
 2. Start webserver and MySQL from the XAMMP control panel.
@@ -27,7 +27,7 @@ Install instructions for Windows:
     i) If screen is blank try changing permissions of <strong>saveurl\storage</strong> to 775 or 777.
 9. Have fun and send me comments or contribute to the project.
 
-Install instructions for Linux/Unix:
+Instructions for Linux/Unix:
 ---------------------------------
 1. Install LAMP/MAMP.
 2. Download release v.1.0 - https://github.com/athanasiosem/saveUrl/archive/v1.0.zip
