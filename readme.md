@@ -7,11 +7,13 @@ Athanasios Emmanouilidis 2015, MIT LICENSE.
 
 Prerequisites:
 --------------
-1. A web server with PHP 5.6.8 support.
+1. A web server with PHP 5.6.8 support, preferably XAMMP - https://www.apachefriends.org.
 2. MySQL installed.
 
 Install instructions:
 ---------------------
+-2. Install XAMPP.
+-1. Start webserver and MySQL from the XAMMP control panel.
 0. Download release v.1.0 - https://github.com/athanasiosem/saveUrl/archive/v1.0.zip
 1. Extract and Copy the directory called 'saveUrl-1.0' on your htdocs folder. Then rename it to 'saveurl'.
 2. Create a mysql database called 'saveurl' with user 'saveurl' and password 'saveurl'.
