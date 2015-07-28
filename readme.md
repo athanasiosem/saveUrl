@@ -10,8 +10,8 @@ Prerequisites:
 1. A web server with PHP 5.6.8 support, preferably XAMMP - https://www.apachefriends.org.
 2. MySQL installed.
 
-Install instructions:
----------------------
+Install instructions for Windows:
+---------------------------------
 0. Install XAMPP.
 1. Start webserver and MySQL from the XAMMP control panel.
 2. Download release v.1.0 - https://github.com/athanasiosem/saveUrl/archive/v1.0.zip
