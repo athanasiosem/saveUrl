@@ -18,7 +18,8 @@ $(document).ready( function () {
   ],
 	 "processing": true,
         "serverSide": true,
-        "ajax": "server_side/server_processing.php"
+        "ajax": "server_side/server_processing.php",
+        "scrollX": true
 	});
 
 var table = $('#links_table').DataTable();
