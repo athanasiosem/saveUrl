@@ -92,6 +92,8 @@
 									Login
 								</button>
 
+								<a href="/auth/register">Register</a>
+
 								<a href="/password/email">Forgot Your Password?</a>
 							</div>
 						</div>
