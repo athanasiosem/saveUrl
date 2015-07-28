@@ -6,7 +6,12 @@ $(document).ready( function () {
       "data": null,
       "defaultContent": "<button class='deleteButton'>Delete</button>",
       "targets": -1
-    }
+    },
+    {
+   "targets": 1,
+   "render": function ( data, type, full, meta ) {
+     return '<a href="'+data+'" target="_blank">'+data+'</a>';
+   }}
   ],
 	 "processing": true,
         "serverSide": true,
