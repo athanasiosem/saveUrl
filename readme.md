@@ -1,5 +1,5 @@
 ## saveUrl web app
-Written in PHP5, MySQL, Laravel 5.1.
+Written in PHP5, MySQL, Laravel 5.1, HTML5, CSS3, JavaScript, jQuery, DataTables plugin.
 Athanasios Emmanouilidis 2015, MIT LICENSE.
 
 ![ScreenShot](http://s9.postimg.org/konupiptb/save_Url_Screenshot.png)
