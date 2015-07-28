@@ -7,7 +7,7 @@ Athanasios Emmanouilidis 2015, MIT LICENSE.
 
 Prerequisites:
 --------------
-1. A web server with PHP 5.6 support.
+1. A web server with PHP 5.6.8 support.
 2. A MySQL database.
 
 Install instructions:
