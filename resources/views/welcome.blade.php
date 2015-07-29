@@ -17,7 +17,9 @@
 				font-weight: 100;
 				font-family: 'Lato';
 			}
-
+			.smaller_subheading{
+				font-size:20px;
+			}
 			.container {
 				text-align: center;
 				display: table-cell;
@@ -29,10 +31,7 @@
 				text-align: center;
 				display: inline-block;
 				font-weight:bold;
-
 			}
-
-
 
 			.title {
 				font-size: 96px;
@@ -54,7 +53,8 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Welcome to saveUrl.</div>
+				<div class="title">Welcome to saveUrl.<p class="smaller_subheading">{{ $numberOfLinks }} links saved. Thats {{ $dataSize }} bytes of data.</p>
+</div>
 				<div class="loginBox">
 <div class="container-fluid">
 	<div class="row">

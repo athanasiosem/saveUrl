@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use App\Link;
+use DB;
 class WelcomeController extends Controller {
 
 	/*
@@ -30,7 +32,14 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('welcome');
+		// sql query to get database size{}
+
+		$dataSize = DB::select('SELECT round(((data_length + index_length))) "size"
+		 FROM information_schema.TABLES
+		 WHERE table_schema = "saveurl" AND table_name = "links"');
+
+		$numberOfLinks = Link::all()->count();
+		return view('welcome')->with('numberOfLinks',$numberOfLinks)->with('dataSize',$dataSize[0]->size);
 	}
 
 }
