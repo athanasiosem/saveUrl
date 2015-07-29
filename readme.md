@@ -18,8 +18,8 @@ Instructions for Windows:
 ---------------------------------
 1. Install XAMPP.
 2. Start webserver and MySQL from the XAMMP control panel.
-3. Download release v.1.0 - https://github.com/athanasiosem/saveUrl/archive/v1.0.zip
-4. Extract and Copy the directory called 'saveUrl-1.0' in your htdocs folder. Then rename it to 'saveurl'.
+3. Download latest release of saveUrl.
+4. Extract and Copy the directory called 'saveUrl-x.x' in your htdocs folder. Then rename it to 'saveurl'.
 5. Create a mysql database called 'saveurl' with user 'saveurl' and password 'saveurl'.
 6. The details are pre-configured in <strong>saveurl\config\database.php</strong>  file. Also in <strong>saveurl\public\server_side\server_processing.php</strong>. These are the two locations you need to provide the database details for the program to work.
 7. Open cmd.exe, go to 'saveurl' folder and type <code>composer update --no-scripts</code>. After this finishes run <code>php artisan migrate</code> to create the tables. If you get error running <code>php artisan migrate</code> then run <code>composer dump-autoload</code>.
@@ -30,8 +30,8 @@ Instructions for Windows:
 Instructions for Linux/Unix:
 ---------------------------------
 1. Install LAMP/MAMP.
-2. Download release v.1.0 - https://github.com/athanasiosem/saveUrl/archive/v1.0.zip
-3. Extract/Copy the directory called 'saveUrl-1.0' in your server[usually /var/www/html] folder. Then rename it to 'saveurl'.
+2. Download latest release of saveUrl.
+3. Extract/Copy the directory called 'saveUrl-x.x' in your server[usually /var/www/html] folder. Then rename it to 'saveurl'.
 4. Create a mysql database called 'saveurl' with user 'saveurl' and password 'saveurl'.
 5. The details are pre-configured in <strong>saveurl/config/database.php</strong> file. Also in <strong>saveurl/public/server_side/server_processing.php</strong>. These are the two locations you need to provide the database details for the program to work.
 6. Open the terminal and change directory to 'saveurl' folder. Type <code>composer update --no-scripts</code>. After updating the composer  use <code>php artisan migrate</code>.
