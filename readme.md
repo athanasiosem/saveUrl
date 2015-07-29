@@ -1,5 +1,5 @@
 ## saveUrl web app
-Saves URLs. CRD functionality.
+Saves URLs. CRD functionality. Multi-user.
 App written using PHP5, MySQL, Laravel 5.1, HTML5, CSS3, JavaScript, jQuery, DataTables plugin.
 Athanasios Emmanouilidis 2015, MIT LICENSE.
 
