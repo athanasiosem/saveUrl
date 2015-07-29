@@ -38,5 +38,3 @@ Instructions for Linux/Unix:
 7. Open your favourite browser and navigate to the url.<br>
     i) If screen is blank try changing permissions of <strong>saveurl/storage</strong> to 775 or 777.
 8. Have fun and send me comments or contribute to the project.
-
-<b>NOTE: The app is not multi user yet! The same data exists for all users!</b>
