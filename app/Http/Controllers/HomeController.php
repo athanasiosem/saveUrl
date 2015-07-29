@@ -1,5 +1,8 @@
 <?php namespace App\Http\Controllers;
 
+use Auth;
+use App\Link;
+
 class HomeController extends Controller {
 
 	/*
@@ -30,7 +33,8 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('link.index');
+		$links = Link::where('user_id', Auth::user()->id)->get();
+		return view('link.index',compact('links'));
 	}
 
 }

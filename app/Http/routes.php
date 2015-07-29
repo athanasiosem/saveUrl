@@ -20,7 +20,6 @@ Route::delete('deleteLink', 'LinkController@deleteLink');
 
 
 
-
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

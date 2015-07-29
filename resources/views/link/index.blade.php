@@ -41,6 +41,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Your links</div>
 				<div class="panel-body">
+
 <table id="links_table" class="display" data-user="{{ auth()->user()->id }}">
     <thead>
         <tr>
@@ -53,24 +54,18 @@
 			</tr>
     </thead>
     <tbody>
+			@foreach($links as $link)
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-
+						<td>{{ $link->id }} </td>
+            <td>{{ $link->url }} </td>
+            <td>{{ $link->description }} </td>
+						<td>{{ $link->created_at }} </td>
+						<td>{{ $link->updated_at }} </td>
+						<td></td>
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+      
+				@endforeach
 
-        </tr>
     </tbody>
 </table>			</div>
 			</div>

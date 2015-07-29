@@ -1,7 +1,5 @@
 $(document).ready( function () {
 
-    var loggedInUser = $('#links_table').attr('data-user');
-
     $('#links_table').DataTable({
       "dom": 'T<"clear">lfrtip',
         "tableTools": {
@@ -19,12 +17,9 @@ $(document).ready( function () {
      return '<a href="'+data+'" target="_blank">'+data+'</a>';
    }}
   ],
-	 "processing": true,
-        "serverSide": true,
-        "ajax": "server_side/server_processing.php?user_id="+loggedInUser+"",
         "scrollX": true,
         "oLanguage": {
-         "sInfoFiltered": ""
+         "sInfoFiltered": "",
        }
 	});
 
@@ -44,8 +39,9 @@ if(confirm("Are you sure you want to delete this?")){
        type: 'DELETE',
        data : {id:$id, _token:$csrf_token},
        success: function(result) {
-         alert("post deleted from db!");
-           table.draw();
+           table.row().remove().draw();
+           alert("post deleted from db!");
+
        }
    });
 }
