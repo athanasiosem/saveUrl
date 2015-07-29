@@ -26,7 +26,10 @@
 				vertical-align: middle;
 				font-weight: bold;
 			}
-
+			.loginBox{
+				margin-left: auto;
+				margin-right: auto;
+			}
 			.content {
 				text-align: center;
 				display: inline-block;
