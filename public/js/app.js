@@ -1,4 +1,7 @@
 $(document).ready( function () {
+
+    var loggedInUser = $('#links_table').attr('data-user');
+
     $('#links_table').DataTable({
       "dom": 'T<"clear">lfrtip',
         "tableTools": {
@@ -18,7 +21,7 @@ $(document).ready( function () {
   ],
 	 "processing": true,
         "serverSide": true,
-        "ajax": "server_side/server_processing.php",
+        "ajax": "server_side/server_processing.php?user_id="+loggedInUser+"",
         "scrollX": true
 	});
 

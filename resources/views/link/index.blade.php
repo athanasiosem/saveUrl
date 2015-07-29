@@ -41,7 +41,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Your links</div>
 				<div class="panel-body">
-<table id="links_table" class="display">
+<table id="links_table" class="display" data-user="{{ auth()->user()->id }}">
     <thead>
         <tr>
             <th>Id</th>

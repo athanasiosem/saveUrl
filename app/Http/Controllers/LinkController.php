@@ -2,6 +2,7 @@
 
 use Input;
 use DB;
+use Auth;
 use App\Link;
 use Illuminate\Http\Request;
 
@@ -27,6 +28,7 @@ class LinkController extends Controller {
 		$linkObject = new Link;
 		$linkObject->url = $request->get('link');
 		$linkObject->description = $request->get('description');
+		$linkObject->user_id = Auth::user()->id;
 		$linkObject->save();
 
 		/*
