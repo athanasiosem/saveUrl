@@ -8,7 +8,7 @@
 	<title>saveUrl</title>
 
 <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
-
+<link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 	<!-- DataTables CSS -->
 <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
 <link rel="stylesheet" href="//cdn.datatables.net/tabletools/2.2.4/css/dataTables.tableTools.css">
