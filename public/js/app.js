@@ -22,7 +22,10 @@ $(document).ready( function () {
 	 "processing": true,
         "serverSide": true,
         "ajax": "server_side/server_processing.php?user_id="+loggedInUser+"",
-        "scrollX": true
+        "scrollX": true,
+        "oLanguage": {
+         "sInfoFiltered": ""
+       }
 	});
 
 var table = $('#links_table').DataTable();
