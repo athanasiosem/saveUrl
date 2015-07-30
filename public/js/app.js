@@ -1,6 +1,6 @@
 $(document).ready( function () {
 
-    $('#links_table').DataTable({
+var table = $('#links_table').DataTable({
       "dom": 'T<"clear">lfrtip',
         "tableTools": {
             "sSwfPath": "swf/copy_csv_xls_pdf.swf"
@@ -23,15 +23,15 @@ $(document).ready( function () {
        }
 	});
 
-var table = $('#links_table').DataTable();
 var $csrf_token = $('meta[name="csrf-token"]').attr('content');
 
-
-$('body').on('click', '.deleteButton', function() {
+$('#links_table tbody').on('click','button.deleteButton', function() {
 
 $id = $(this).parent().parent().find('td:first-child').text();
 
 if(confirm("Are you sure you want to delete this?")){
+  var thisVariable = $(this);
+  /*table.row($(this).parents('tr')).remove().draw();*/
 
    // ajax call to the API
    $.ajax({
@@ -39,19 +39,16 @@ if(confirm("Are you sure you want to delete this?")){
        type: 'DELETE',
        data : {id:$id, _token:$csrf_token},
        success: function(result) {
-           table.row().remove().draw();
+           table.row(thisVariable.parents('tr')).remove().draw();
            alert("post deleted from db!");
 
        }
    });
 }
-
- });
-
+});
 
   window.setTimeout(function(){
   $('.alert-success').hide("slow",function(){});
   },3000);
-
 
 } );

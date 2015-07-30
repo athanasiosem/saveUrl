@@ -42,8 +42,9 @@ class LinkController extends Controller {
 		// delete link if only the link belongs to the loggedin user
 		$linkId = $request->get('id');
 		$linkObject = Link::find($linkId);
+		$linkObjectUserId = $linkObject->user_id;
 
-		if ($linkObject->user_id == Auth::user()->id)
+		if ($linkObjectUserId == Auth::user()->id)
 		{
 			$linkObject->delete();
 		}
