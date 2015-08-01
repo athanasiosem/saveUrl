@@ -37,12 +37,14 @@ if(confirm("Are you sure you want to delete this?")){
    $.ajax({
        url: 'deleteLink',
        type: 'DELETE',
-       data : {id:$id, _token:$csrf_token},
-       success: function(result) {
-           table.row(thisVariable.parents('tr')).remove().draw();
-           alert("post deleted from db!");
+       data : {id:$id, _token:$csrf_token}
 
-       }
+   }).done(function(result) {
+       table.row(thisVariable.parents('tr')).remove().draw();
+       toastr.success("post deleted from db!");
+
+   }).fail(function(jqXHR, textStatus, errorThrown) {
+     toastr.error("Request failed. Textstatus: "+textStatus);
    });
 }
 });

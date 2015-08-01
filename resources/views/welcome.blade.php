@@ -121,7 +121,7 @@
 </div>
 </div>
 <footer>
-<p class="white">Athanasios Emmanouilidis 2015</p>
+<p class="white">Athanasios Emmanouilidis 2015 - Made in Thessaloniki, Greece.</p>
 </footer>
 			</div>
 		</div>

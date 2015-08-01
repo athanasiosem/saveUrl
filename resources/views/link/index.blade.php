@@ -63,14 +63,14 @@
 						<td>{{ $link->updated_at }} </td>
 						<td></td>
         </tr>
-      
+
 				@endforeach
 
     </tbody>
 </table>			</div>
 			</div>
 						<footer>
-<p>Athanasios Emmanouilidis 2015</p>
+<p>Athanasios Emmanouilidis 2015. Made in Thessaloniki, Greece.</p>
 </footer>
 		</div>
 
