@@ -25,6 +25,27 @@ var table = $('#links_table').DataTable({
 
 var $csrf_token = $('meta[name="csrf-token"]').attr('content');
 
+
+
+$('#postlinkbutton').on('click',function(e){
+  e.preventDefault();
+  var link = $('#link').val();
+  var description = $('#description').val();
+
+  // ajax call to the API
+  $.ajax({
+      url: 'postlinkPOST',
+      type: 'POST',
+      data : {link:link,description:description,_token:$csrf_token}
+
+  }).done(function(result) {
+      toastr.success("post added!");
+  }).fail(function(jqXHR, textStatus, errorThrown) {
+    toastr.error("Request failed. Textstatus: "+textStatus);
+  });
+
+});
+
 $('#links_table tbody').on('click','button.deleteButton', function() {
 
 $id = $(this).parent().parent().find('td:first-child').text();

@@ -28,12 +28,12 @@
 						</div>
 					@endif
 
-					<form method="post" action="{{ url('postlinkPOST') }}">
+					<form>
 						<label for="link">Link</label>
-						<input type="text" name="link">
+						<input id="link" type="text" name="link">
 						<label for="description">Description</label>
-						<input type="text" name="description">
-						<button type="submit" name="postlink">Add Link</button>
+						<input id="description" type="text" name="description">
+						<button type="submit" id="postlinkbutton" name="postlink">Add Link</button>
 						<input type="hidden" value="{{ csrf_token() }}" name="_token">
 					</form>
 				</div>

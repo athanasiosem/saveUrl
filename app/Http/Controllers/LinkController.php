@@ -33,7 +33,7 @@ class LinkController extends Controller {
 			$linkObject->user_id = Auth::user()->id;
 			$linkObject->save();
 
-			return redirect('home')->withMessage('Link added!');;
+/*			return redirect('home')->withMessage('Link added!');;*/
 		}
 	}
 
